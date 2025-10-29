@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import logo from '../assets/brand/KRF-Logo.png'
+import logo from '../assets/brand/KRF-Logo1.png' // Using white/transparent logo for better visibility on dark navbar
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -21,7 +21,7 @@ export default function Navbar() {
   const navItems = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
-  { label: 'Services & Programs', to: '/programs' },
+  { label: 'Services & Programmes', to: '/programs' },
   { label: 'Milestones', to: '/milestones' },
   { label: 'Impact', to: '/impact' },
   { label: 'Approach', to: '/approach' },

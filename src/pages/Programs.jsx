@@ -20,6 +20,15 @@ import {
 } from '../components/Icons'
 
 export default function Programs() {
+  const [expandedCards, setExpandedCards] = useState({})
+
+  const toggleCard = (index) => {
+    setExpandedCards(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }))
+  }
+
   const services = [
     { title: "Accredited Skills Programmes & Qualifications", Icon: BadgeCheckIcon, color: "from-blue-500 to-blue-600" },
     { title: "Recognition of Prior Learning (RPL)", Icon: TrophyIcon, color: "from-gold to-yellow-600" },
@@ -57,7 +66,7 @@ export default function Programs() {
       ],
     },
     {
-      title: "Business Administration Programs",
+      title: "Business Administration Programmes",
       overview:
         "Master essential business administration skills including office management, communication, and organizational systems for corporate environments.",
       target: "Aspiring administrators and office professionals",
@@ -125,7 +134,7 @@ export default function Programs() {
       ],
     },
     {
-      title: "Employment Readiness Programs",
+      title: "Employment Readiness Programmes",
       overview:
         "Comprehensive program combining skills training, job search strategies, and placement assistance to get you employment-ready.",
       target: "Unemployed youth and job seekers",
@@ -271,10 +280,10 @@ export default function Programs() {
       <section>
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-6 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-lg">
-            <span className="text-sm font-semibold text-gold uppercase tracking-wider">Training Programs</span>
+            <span className="text-sm font-semibold text-gold uppercase tracking-wider">Training Programmes</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold gradient-text">
-            Our Programs
+            Our Programmes
           </h2>
         </div>
 
@@ -333,20 +342,38 @@ export default function Programs() {
                     </div>
                   </div>
 
-                  {/* Curriculum */}
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-5 border border-gray-200 mt-auto">
-                    <h4 className="font-bold text-charcoal text-sm mb-3 flex items-center gap-2">
-                      <AcademicCapIcon className="w-5 h-5 text-gold" />
-                      Curriculum Highlights
-                    </h4>
-                    <ul className="space-y-2">
-                      {prog.curriculum.map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-gray-700">
-                          <CheckCircleIcon className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                          <span className="text-xs leading-relaxed">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Curriculum - Collapsible */}
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200 mt-auto overflow-hidden">
+                    <button
+                      onClick={() => toggleCard(index)}
+                      className="w-full p-5 flex items-center justify-between hover:bg-gray-100 transition-colors"
+                    >
+                      <h4 className="font-bold text-charcoal text-sm flex items-center gap-2">
+                        <AcademicCapIcon className="w-5 h-5 text-gold" />
+                        Curriculum Highlights
+                      </h4>
+                      {expandedCards[index] ? (
+                        <svg className="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                        </svg>
+                      ) : (
+                        <svg className="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      )}
+                    </button>
+                    {expandedCards[index] && (
+                      <div className="px-5 pb-5">
+                        <ul className="space-y-2">
+                          {prog.curriculum.map((item, i) => (
+                            <li key={i} className="flex items-start gap-2 text-gray-700">
+                              <CheckCircleIcon className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+                              <span className="text-xs leading-relaxed">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

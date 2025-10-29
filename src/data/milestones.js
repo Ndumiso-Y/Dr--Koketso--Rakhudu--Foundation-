@@ -24,7 +24,7 @@ export const milestones = [
       "LPG CSI Hakem Energies programme reached 1,000 beneficiaries",
       "Successfully launched Solar Training initiative",
       "W&R SETA Programme trained 300 participants",
-      "Short Learning Programs benefited 150 individuals",
+      "Short Learning Programmes benefited 150 individuals",
       "Established regional training centers",
     ],
     impact: {
