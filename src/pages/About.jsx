@@ -34,7 +34,7 @@ export default function About() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold mb-8 animate-fade-in-down">
-          <span className="gradient-text">Dr. Koketso Rakhudu Foundation</span>
+          <span className="gradient-text">Koketso Rakhudu Foundation</span>
         </h1>
 
         <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6 animate-fade-in-up animation-delay-200">
@@ -100,7 +100,7 @@ export default function About() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            The Dr. Koketso Rakhudu Foundation was established on 1 May 2016 to address educational and skills gaps in underserved communities.
+            The Koketso Rakhudu Foundation was established on 1 May 2016 to address educational and skills gaps in underserved communities.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Dr. Koketso Rakhudu serves as Chancellor of the Foundation CET Centre, Kgosana of Tsitsing (Royal Bafokeng Nation), Guest Lecturer at UNISA and NWU, Deputy Chairperson of the Provincial Council on AIDS, and Founder of the Village Economy Indaba.

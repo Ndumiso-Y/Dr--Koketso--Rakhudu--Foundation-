@@ -54,7 +54,7 @@ export default function Contact() {
           <span className="gradient-text">Contact Us</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          Get in touch with the Dr. Koketso Rakhudu Foundation for collaborations, training enrolments or community projects.
+          Get in touch with the Koketso Rakhudu Foundation for collaborations, training enrolments or community projects.
         </p>
       </section>
 

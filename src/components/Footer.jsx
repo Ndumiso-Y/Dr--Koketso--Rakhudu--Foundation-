@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-semibold text-gold">Dr. Koketso Rakhudu Foundation</h3>
+            <h3 className="text-lg font-semibold text-gold">Koketso Rakhudu Foundation</h3>
             <p className="mt-3 text-sm text-white/80">
               Empowering Lives with Excellence — building sustainable
               foundations for generations to thrive.
@@ -46,7 +46,7 @@ export default function Footer() {
             Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
           </p>
           <p>
-            © {new Date().getFullYear()} Dr. Koketso Rakhudu Foundation · Designed by{' '}
+            © {new Date().getFullYear()} Koketso Rakhudu Foundation · Designed by{' '}
             <a
               href="https://www.embarkdigitals.com"
               target="_blank"

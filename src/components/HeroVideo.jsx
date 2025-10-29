@@ -31,7 +31,7 @@ export default function HeroVideo() {
         {/* Main Heading with Stagger Animation */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6 animate-fade-in-up">
           <span className="bg-gradient-to-r from-white via-white to-gold/80 bg-clip-text text-transparent">
-            Dr. Koketso Rakhudu Foundation
+            Koketso Rakhudu Foundation
           </span>
           <br />
           <span className="text-gold drop-shadow-2xl">
@@ -41,7 +41,7 @@ export default function HeroVideo() {
 
         {/* Description */}
         <p className="mx-auto mt-6 max-w-3xl text-lg md:text-xl text-white/95 leading-relaxed font-light animate-fade-in-up animation-delay-200">
-          Welcome to the Dr. Koketso Rakhudu Foundation — where we empower lives with excellence.
+          Welcome to the Koketso Rakhudu Foundation — where we empower lives with excellence.
           Rooted in community development and lifelong learning, we champion accessible education and skills training for all.
         </p>
 

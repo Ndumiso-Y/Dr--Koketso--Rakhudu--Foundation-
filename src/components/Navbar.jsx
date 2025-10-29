@@ -40,10 +40,10 @@ export default function Navbar() {
         <nav className="flex items-center justify-between py-3" aria-label="Primary">
           {/* Brand */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Dr. Koketso Rakhudu Foundation logo" className="h-10 w-auto" />
-            <span className="sr-only">Dr. Koketso Rakhudu Foundation</span>
+            <img src={logo} alt="Koketso Rakhudu Foundation logo" className="h-10 w-auto" />
+            <span className="sr-only">Koketso Rakhudu Foundation</span>
             <span className="hidden sm:inline-block font-semibold tracking-wide text-gold">
-              Dr. Koketso Rakhudu Foundation
+              Koketso Rakhudu Foundation
             </span>
           </Link>
 

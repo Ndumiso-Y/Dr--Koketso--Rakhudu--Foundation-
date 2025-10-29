@@ -161,7 +161,7 @@ export default function Programs() {
           <span className="gradient-text">Services & Programmes</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          Through our accredited programmes and community initiatives, the Dr. Koketso Rakhudu Foundation delivers skills training that equips learners for employment and entrepreneurship.
+          Through our accredited programmes and community initiatives, the Koketso Rakhudu Foundation delivers skills training that equips learners for employment and entrepreneurship.
         </p>
       </section>
 
