@@ -7,22 +7,22 @@ export default function PartnersLogos() {
   const scrollRef = useRef(null)
 
   const partners = [
-    { name: "ABSA", logo: "/src/assets/PartnersLogos/ABSA.jpg" },
-    { name: "AgriSeta", logo: "/src/assets/PartnersLogos/AgriSeta.jpg" },
-    { name: "Cathsseta", logo: "/src/assets/PartnersLogos/Cathsseta.jpg" },
-    { name: "Classic Oriental Consultancy", logo: "/src/assets/PartnersLogos/ClassicOrientalConsultancy.jpg" },
-    { name: "EBJ Holdings", logo: "/src/assets/PartnersLogos/EBJHOLDINGS.jpg" },
-    { name: "EWSETA", logo: "/src/assets/PartnersLogos/EWSETA.jpg" },
-    { name: "Hakem Energies Foundation", logo: "/src/assets/PartnersLogos/HakemEnergiesFoundationLogo -.png" },
-    { name: "Hakem", logo: "/src/assets/PartnersLogos/Hakem Logo.png" },
-    { name: "Maikwane Holdings", logo: "/src/assets/PartnersLogos/Maikwane Holdings.jpg" },
-    { name: "Mdihub", logo: "/src/assets/PartnersLogos/Mdihub.jpg" },
-    { name: "Mesora", logo: "/src/assets/PartnersLogos/Mesora.jpg" },
-    { name: "North West Development Corporation", logo: "/src/assets/PartnersLogos/NorthWestDevelopmentCorporation.jpg" },
-    { name: "QCTO", logo: "/src/assets/PartnersLogos/QCTO.jpg" },
-    { name: "SANNAH", logo: "/src/assets/PartnersLogos/SANNAH.jpg" },
-    { name: "Thuba Pelo Mosadi", logo: "/src/assets/PartnersLogos/ThubaPeloMosadi.jpg" },
-    { name: "Tshanew University", logo: "/src/assets/PartnersLogos/TshanewUniversity.jpg" },
+    { name: "ABSA", logo: "/gallery/PartnersLogos/ABSA.jpg" },
+    { name: "AgriSeta", logo: "/gallery/PartnersLogos/AgriSeta.jpg" },
+    { name: "Cathsseta", logo: "/gallery/PartnersLogos/Cathsseta.jpg" },
+    { name: "Classic Oriental Consultancy", logo: "/gallery/PartnersLogos/ClassicOrientalConsultancy.jpg" },
+    { name: "EBJ Holdings", logo: "/gallery/PartnersLogos/EBJHOLDINGS.jpg" },
+    { name: "EWSETA", logo: "/gallery/PartnersLogos/EWSETA.jpg" },
+    { name: "Hakem Energies Foundation", logo: "/gallery/PartnersLogos/HakemEnergiesFoundationLogo -.png" },
+    { name: "Hakem", logo: "/gallery/PartnersLogos/Hakem Logo.png" },
+    { name: "Maikwane Holdings", logo: "/gallery/PartnersLogos/Maikwane Holdings.jpg" },
+    { name: "Mdihub", logo: "/gallery/PartnersLogos/Mdihub.jpg" },
+    { name: "Mesora", logo: "/gallery/PartnersLogos/Mesora.jpg" },
+    { name: "North West Development Corporation", logo: "/gallery/PartnersLogos/NorthWestDevelopmentCorporation.jpg" },
+    { name: "QCTO", logo: "/gallery/PartnersLogos/QCTO.jpg" },
+    { name: "SANNAH", logo: "/gallery/PartnersLogos/SANNAH.jpg" },
+    { name: "Thuba Pelo Mosadi", logo: "/gallery/PartnersLogos/ThubaPeloMosadi.jpg" },
+    { name: "Tshanew University", logo: "/gallery/PartnersLogos/TshanewUniversity.jpg" },
   ]
 
   // Auto-scroll for mobile

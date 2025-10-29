@@ -26,17 +26,17 @@ export default function Impact() {
   }
 
   const bootCampImages = Array.from({ length: 11 }, (_, i) => ({
-    src: `/src/assets/5DayBootCamp/IMG-20251028-WA00${65 + i}.jpg`,
+    src: `/gallery/5DayBootCamp/IMG-20251028-WA00${65 + i}.jpg`,
     alt: `5-Day Boot Camp 2025 - Image ${i + 1}`
   }))
 
   const graduationImages = Array.from({ length: 45 }, (_, i) => ({
-    src: `/src/assets/Graduation/IMG-20251028-WA00${8 + i < 10 ? '0' + (8 + i) : 8 + i}.jpg`,
+    src: `/gallery/Graduation/IMG-20251028-WA00${8 + i < 10 ? '0' + (8 + i) : 8 + i}.jpg`,
     alt: `Graduation 2025 - Image ${i + 1}`
   }))
 
   const inductionImages = Array.from({ length: 12 }, (_, i) => ({
-    src: `/src/assets/InductionDay/IMG-20251028-WA00${53 + i}.jpg`,
+    src: `/gallery/InductionDay/IMG-20251028-WA00${53 + i}.jpg`,
     alt: `Induction Day 2025 - Image ${i + 1}`
   }))
 
