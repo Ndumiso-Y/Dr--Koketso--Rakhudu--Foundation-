@@ -1,5 +1,6 @@
 // src/pages/Impact.jsx
-
+import { useState } from 'react'
+import Lightbox from '../components/Lightbox'
 import {
   UsersIcon,
   TrendingUpIcon,
@@ -14,6 +15,31 @@ import {
 } from '../components/Icons'
 
 export default function Impact() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxImages, setLightboxImages] = useState([])
+  const [lightboxIndex, setLightboxIndex] = useState(0)
+
+  const openLightbox = (images, index) => {
+    setLightboxImages(images)
+    setLightboxIndex(index)
+    setLightboxOpen(true)
+  }
+
+  const bootCampImages = Array.from({ length: 11 }, (_, i) => ({
+    src: `/src/assets/5DayBootCamp/IMG-20251028-WA00${65 + i}.jpg`,
+    alt: `5-Day Boot Camp 2025 - Image ${i + 1}`
+  }))
+
+  const graduationImages = Array.from({ length: 45 }, (_, i) => ({
+    src: `/src/assets/Graduation/IMG-20251028-WA00${8 + i < 10 ? '0' + (8 + i) : 8 + i}.jpg`,
+    alt: `Graduation 2025 - Image ${i + 1}`
+  }))
+
+  const inductionImages = Array.from({ length: 12 }, (_, i) => ({
+    src: `/src/assets/InductionDay/IMG-20251028-WA00${53 + i}.jpg`,
+    alt: `Induction Day 2025 - Image ${i + 1}`
+  }))
+
   const achievements = [
     { label: "Total Beneficiaries", value: "3,267", sub: "Lives Transformed", Icon: UsersIcon, color: "from-blue-500 to-blue-600" },
     { label: "Investment Value", value: "R5.7M", sub: "Community Impact", Icon: TrendingUpIcon, color: "from-gold to-yellow-600" },
@@ -53,11 +79,28 @@ export default function Impact() {
           <span className="gradient-text">Impact and Community</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          Transforming lives through inclusive education and skills development.
-          <br />
-          Our results reflect years of consistent growth, partnerships, and a
-          deep commitment to community empowerment.
+          Transforming lives through inclusive education and skills development.<br />
+          Since 2016, the Foundation has empowered over 3,267 beneficiaries through 25+ programmes valued at R5.7 million, with 3 regional training centres.
         </p>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-8 text-lg text-gray-700">
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-gold">150,000</span>
+            <span>Community Population</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-gold">29</span>
+            <span>Villages</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-gold">96.4%</span>
+            <span>Literacy</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-gold">40.2%</span>
+            <span>Post-Matric</span>
+          </div>
+        </div>
       </section>
 
       {/* ===== KEY ACHIEVEMENTS ===== */}
@@ -180,15 +223,139 @@ export default function Impact() {
         </div>
       </section>
 
+      {/* ===== PHOTO GALLERIES ===== */}
+      <section className="space-y-16">
+        {/* 5-Day Boot Camp Gallery */}
+        <div>
+          <div className="text-center mb-8">
+            <div className="inline-block mb-4 px-6 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-lg">
+              <span className="text-sm font-semibold text-gold uppercase tracking-wider">2025</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+              5-Day Boot Camp 2025
+            </h2>
+            <p className="text-gray-600">Click on any image to view gallery</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {bootCampImages.slice(0, 2).map((img, i) => (
+              <button
+                key={i}
+                onClick={() => openLightbox(bootCampImages, i)}
+                className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    <p className="font-semibold">View {bootCampImages.length} Photos</p>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Graduation Gallery */}
+        <div>
+          <div className="text-center mb-8">
+            <div className="inline-block mb-4 px-6 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-lg">
+              <span className="text-sm font-semibold text-gold uppercase tracking-wider">2025</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+              Graduation 2025
+            </h2>
+            <p className="text-gray-600">Click on any image to view gallery</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {graduationImages.slice(0, 2).map((img, i) => (
+              <button
+                key={i}
+                onClick={() => openLightbox(graduationImages, i)}
+                className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    <p className="font-semibold">View {graduationImages.length} Photos</p>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Induction Day Gallery */}
+        <div>
+          <div className="text-center mb-8">
+            <div className="inline-block mb-4 px-6 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-lg">
+              <span className="text-sm font-semibold text-gold uppercase tracking-wider">2025</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+              Induction Day 2025
+            </h2>
+            <p className="text-gray-600">Click on any image to view gallery</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {inductionImages.slice(0, 2).map((img, i) => (
+              <button
+                key={i}
+                onClick={() => openLightbox(inductionImages, i)}
+                className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    <p className="font-semibold">View {inductionImages.length} Photos</p>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lightbox */}
+      <Lightbox
+        images={lightboxImages}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        startIndex={lightboxIndex}
+      />
+
       {/* ===== ACCREDITATION FOOTER ===== */}
       <footer className="text-center text-sm text-gray-600 border-t pt-8">
         <p>
-          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 | Code: 581
-          · SAQA Provider Code: ETDP2368 · Reg No. 177-109 NPO
+          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
         </p>
         <p>
           <span className="font-semibold text-charcoal">
-            +27 63 644 5723 · admin@koketsorakhudufoundation.com
+            +27 63 644 5723 · Dumela@drkoketsorakhudu.com
           </span>{" "}
           · www.drkoketsorakhudufoundation.com
         </p>

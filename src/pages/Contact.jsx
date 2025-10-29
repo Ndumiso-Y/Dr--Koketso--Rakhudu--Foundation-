@@ -54,8 +54,7 @@ export default function Contact() {
           <span className="gradient-text">Contact Us</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          We're here to connect with you — whether you're a partner, learner, or community organization.
-          Reach out to the Koketso Rakhudu Foundation to learn more about our programmes and initiatives.
+          Get in touch with the Dr. Koketso Rakhudu Foundation for collaborations, training enrolments or community projects.
         </p>
       </section>
 
@@ -73,7 +72,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-charcoal mb-1">Address</h3>
-                <p className="text-gray-700">Community Education & Training Center — Maile, Kopman</p>
+                <p className="text-gray-700">Community Education & Training Centre — Maile, Kopman</p>
               </div>
             </div>
           </div>
@@ -99,8 +98,8 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-charcoal mb-1">Email</h3>
-                <a href="mailto:admin@koketsorakhudufoundation.com" className="text-gold hover:underline font-medium break-all">
-                  admin@koketsorakhudufoundation.com
+                <a href="mailto:Dumela@drkoketsorakhudu.com" className="text-gold hover:underline font-medium break-all">
+                  Dumela@drkoketsorakhudu.com
                 </a>
               </div>
             </div>
@@ -213,11 +212,11 @@ export default function Contact() {
       {/* ==== FOOTER ==== */}
       <footer className="text-center text-sm text-gray-600 border-t pt-8">
         <p>
-          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 | Code: 581 · SAQA Provider Code: ETDP2368 · Reg No. 177-109 NPO
+          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
         </p>
         <p>
           <span className="font-semibold text-charcoal">
-            +27 63 644 5723 · admin@koketsorakhudufoundation.com
+            Community Education & Training Centre · Maile Kopman · +27 63 644 5723 · Dumela@drkoketsorakhudu.com
           </span>{" "}
           · www.drkoketsorakhudufoundation.com
         </p>

@@ -60,10 +60,11 @@ export default function Approach() {
         <h1 className="text-5xl md:text-7xl font-extrabold mb-8 animate-fade-in-down">
           <span className="gradient-text">Our Strategic Approach</span>
         </h1>
-        <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          Excellence through strategic design and inclusive innovation.
-          <br />
-          Through our structured, impact-driven framework, we deliver training and community development programs that embrace diversity and empower individuals for sustainable growth.
+        <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200 mb-6">
+          Through our strategically designed structure, which embraces diversity and uniqueness, we deliver exceptional training programmes that ensure the highest quality of education.
+        </p>
+        <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-300">
+          We foster industry partnerships for internship and job placement opportunities and reinforce our commitment through outcome-based assessments and personalised feedback.
         </p>
       </section>
 
@@ -127,8 +128,8 @@ export default function Approach() {
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
               Our Methodology
             </h2>
-            <p className="text-center text-xl text-gray-700 max-w-3xl mx-auto">
-              Our strategic approach integrates research, design, and evaluation to deliver measurable community impact through inclusive and effective learning practices.
+            <p className="text-center text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Through our strategically designed structure, which embraces diversity and uniqueness, we deliver exceptional training programmes that ensure the highest quality of education. We foster industry partnerships for internship and job placement opportunities and reinforce our commitment through outcome-based assessments and personalised feedback.
             </p>
           </div>
 
@@ -163,12 +164,11 @@ export default function Approach() {
       {/* ===== ACCREDITATION FOOTER ===== */}
       <footer className="text-center text-sm text-gray-600 border-t pt-8">
         <p>
-          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 | Code: 581
-          · SAQA Provider Code: ETDP2368 · Reg No. 177-109 NPO
+          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
         </p>
         <p>
           <span className="font-semibold text-charcoal">
-            +27 63 644 5723 · admin@koketsorakhudufoundation.com
+            +27 63 644 5723 · Dumela@drkoketsorakhudu.com
           </span>{" "}
           · www.drkoketsorakhudufoundation.com
         </p>

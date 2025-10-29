@@ -14,7 +14,8 @@ import {
   LinkIcon,
   PhoneIcon,
   MailIcon,
-  GrowthIcon
+  GrowthIcon,
+  CheckCircleIcon
 } from '../components/Icons'
 
 export default function About() {
@@ -33,11 +34,11 @@ export default function About() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold mb-8 animate-fade-in-down">
-          <span className="gradient-text">Koketso Rakhudu Foundation</span>
+          <span className="gradient-text">Dr. Koketso Rakhudu Foundation</span>
         </h1>
 
         <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6 animate-fade-in-up animation-delay-200">
-          <span className="font-semibold text-charcoal">Community Education & Training Center</span>
+          <span className="font-semibold text-charcoal">Community Education & Training Centre</span>
           <br />
           <span className="text-gray-600">Maile, Kopman</span>
         </p>
@@ -49,11 +50,11 @@ export default function About() {
             </svg>
             <span className="font-semibold text-charcoal">+27 63 644 5723</span>
           </a>
-          <a href="mailto:admin@koketsorakhudufoundation.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white shadow-lg shadow-black/5 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 border border-gray-200">
+          <a href="mailto:Dumela@drkoketsorakhudu.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white shadow-lg shadow-black/5 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 border border-gray-200">
             <svg className="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <span className="font-semibold text-charcoal">admin@koketsorakhudufoundation.com</span>
+            <span className="font-semibold text-charcoal">Dumela@drkoketsorakhudu.com</span>
           </a>
         </div>
 
@@ -99,23 +100,16 @@ export default function About() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Through our strategic partnerships and alliances with intellects
-            within our area of influence, we've drawn much intellectual support
-            and foresight. Our resilience and persistence are of exponential
-            growth now, and achieving more milestones is imminent.
+            The Dr. Koketso Rakhudu Foundation was established on 1 May 2016 to address educational and skills gaps in underserved communities.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Confidently and evidently, as a detailed and oriented community
-            chief of the Royal Bafokeng Nations, leading the community of
-            Tsitsing, we have an amplified attitude of breaking barriers and
-            challenging the monotonous approach to addressing socio-economic
-            impediments and pandemics.
+            Dr. Koketso Rakhudu serves as Chancellor of the Foundation CET Centre, Kgosana of Tsitsing (Royal Bafokeng Nation), Guest Lecturer at UNISA and NWU, Deputy Chairperson of the Provincial Council on AIDS, and Founder of the Village Economy Indaba.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            His research partnerships span the Aurum Institute and Johns Hopkins University, and his leadership has been recognised by the Pan African Leadership Institute.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Our passion and selfless spirit of helping to develop our citizens
-            remain the propelling aspect to see the change that our forefathers
-            and current leadership envisioned — tangible outcomes that uplift
-            communities and strengthen sustainable futures.
+            As Chancellor, Dr. Rakhudu envisions creating transformative educational experiences that empower individuals and drive sustainable development within communities.
           </p>
 
           <div className="flex items-center gap-4 pt-6 border-t border-gold/20">
@@ -170,18 +164,84 @@ export default function About() {
             </div>
 
             <h3 className="text-3xl font-bold text-charcoal mb-4 mt-4">Mission</h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-gray-700 leading-relaxed text-lg mb-4">
               A forward-thinking education approach focused on challenging,
               innovative, and personalized learning within our
               community-based space. We nurture and inspire students to achieve
               personal excellence while embracing diversity, developing
-              character, and self-worth, guided by our values of empathy,
-              excellence, integrity, and respect.
+              character, and self-worth.
             </p>
+            <ul className="text-gray-700 leading-relaxed text-base space-y-2">
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Deliver accredited programmes aligned with SETA standards</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Support lifelong learning and skills development</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Host practical workshops and community training initiatives</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Partner with SETAs, educational institutions, and development agencies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Foster a high-performance culture of excellence</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircleIcon className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <span>Continuous improvement and innovation</span>
+              </li>
+            </ul>
 
             {/* Glow effect */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-transparent transition-all duration-500 pointer-events-none" />
           </div>
+        </div>
+      </section>
+
+      {/* ============= KEY PARTNERSHIPS ============= */}
+      <section className="relative">
+        <div className="text-center mb-12">
+          <div className="inline-block mb-4 px-6 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-gold/30 shadow-lg">
+            <span className="text-sm font-semibold text-gold uppercase tracking-wider">Working Together</span>
+          </div>
+          <h2 className="text-5xl md:text-6xl font-extrabold mb-6">
+            <span className="gradient-text">Key Partnerships</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Building sustainable impact through strategic alliances with leading institutions and community organisations.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { name: "Khuli Chana Foundation", desc: "Youth empowerment and community development" },
+            { name: "Cam Life Productions", desc: "Media and skills training partnerships" },
+            { name: "Village Economy Indaba", desc: "Economic development and entrepreneurship" },
+            { name: "Provincial Council on AIDS", desc: "Health education and awareness programmes" }
+          ].map((partner, index) => (
+            <div
+              key={index}
+              className="group relative bg-white border border-gray-200 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+            >
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-yellow-600 rounded-t-2xl" />
+              <div className="w-14 h-14 mb-4 bg-gradient-to-br from-gold/20 to-yellow-600/20 rounded-xl flex items-center justify-center">
+                <LinkIcon className="w-8 h-8 text-gold" />
+              </div>
+              <h3 className="text-lg font-bold text-charcoal mb-2 group-hover:text-gold transition-colors duration-300">
+                {partner.name}
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {partner.desc}
+              </p>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-transparent transition-all duration-500 pointer-events-none" />
+            </div>
+          ))}
         </div>
       </section>
 
@@ -258,34 +318,34 @@ export default function About() {
               color: "from-blue-500 to-blue-600"
             },
             {
-              title: "Integrity & Accountability",
-              desc: "We uphold transparency and ethical decision-making in all our actions.",
-              Icon: SparklesIcon,
-              color: "from-purple-500 to-purple-600"
+              title: "Community Empowerment",
+              desc: "We build bridges between individuals and opportunities for lasting growth.",
+              Icon: GlobeIcon,
+              color: "from-cyan-500 to-cyan-600"
             },
             {
-              title: "Excellence",
+              title: "Excellence in Education",
               desc: "We strive for the highest standards in teaching, leadership, and delivery.",
               Icon: TrophyIcon,
               color: "from-gold to-yellow-600"
             },
             {
-              title: "Inclusivity & Equity",
+              title: "Inclusivity & Diversity",
               desc: "We embrace diversity and ensure that no one is left behind.",
               Icon: UsersIcon,
               color: "from-green-500 to-emerald-600"
+            },
+            {
+              title: "Ethical Leadership",
+              desc: "We uphold transparency, integrity and ethical decision-making in all our actions.",
+              Icon: SparklesIcon,
+              color: "from-purple-500 to-purple-600"
             },
             {
               title: "Innovation & Curiosity",
               desc: "We nurture creativity and forward-thinking solutions to today's challenges.",
               Icon: LightBulbIcon,
               color: "from-orange-500 to-orange-600"
-            },
-            {
-              title: "Community Empowerment",
-              desc: "We build bridges between individuals and opportunities for lasting growth.",
-              Icon: GlobeIcon,
-              color: "from-cyan-500 to-cyan-600"
             },
             {
               title: "Collaboration & Partnership",
@@ -340,7 +400,7 @@ export default function About() {
             <span>·</span>
             <span className="inline-flex items-center gap-2 font-semibold text-charcoal">
               <MailIcon className="w-4 h-4 text-gold" />
-              admin@koketsorakhudufoundation.com
+              Dumela@drkoketsorakhudu.com
             </span>
             <span>·</span>
             <span className="inline-flex items-center gap-2 font-semibold text-charcoal">

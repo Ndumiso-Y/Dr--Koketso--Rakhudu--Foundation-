@@ -158,10 +158,10 @@ export default function Programs() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold mb-8 animate-fade-in-down">
-          <span className="gradient-text">Services & Programs</span>
+          <span className="gradient-text">Services & Programmes</span>
         </h1>
         <p className="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed animate-fade-in-up animation-delay-200">
-          Empowering individuals, communities, and organizations through accredited training, workshops, and skills development initiatives that drive sustainable transformation.
+          Through our accredited programmes and community initiatives, the Dr. Koketso Rakhudu Foundation delivers skills training that equips learners for employment and entrepreneurship.
         </p>
       </section>
 
@@ -278,125 +278,173 @@ export default function Programs() {
           </h2>
         </div>
 
-        <div className="space-y-12">
+        <div className="grid lg:grid-cols-2 gap-8">
           {programs.map((prog, index) => (
             <div key={index}>
-              {/* Program Card */}
-              <div className="group relative bg-gradient-to-br from-white to-gray-50 border-l-4 border-gold rounded-3xl p-10 shadow-2xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                {/* Program icon badge */}
-                <div className="absolute -top-6 left-10 w-14 h-14 bg-gradient-to-br from-gold to-yellow-600 rounded-2xl shadow-lg shadow-gold/50 flex items-center justify-center text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                  <ComputerIcon className="w-8 h-8" />
-                </div>
-
-                <h3 className="text-3xl font-bold text-charcoal mb-4 mt-4 group-hover:text-gold transition-colors duration-300">
-                  {prog.title}
-                </h3>
-
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  {prog.overview}
-                </p>
-
-                <div className="grid sm:grid-cols-2 gap-4 mb-6 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gold/20">
-                  <div className="flex items-start gap-3">
-                    <UsersIcon className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-charcoal">Target Group:</strong>
-                      <p className="text-gray-700 text-sm">{prog.target}</p>
+              {/* Program Card - Clean Card Layout */}
+              <div className="group relative bg-white border-2 border-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:border-gold/50 transition-all duration-500 h-full flex flex-col">
+                {/* Header with colored accent */}
+                <div className="bg-gradient-to-r from-gold to-yellow-600 p-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                      <ComputerIcon className="w-8 h-8 text-gold" />
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <ClockIcon className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-charcoal">Duration:</strong>
-                      <p className="text-gray-700 text-sm">{prog.duration}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <BadgeCheckIcon className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-charcoal">Certification:</strong>
-                      <p className="text-gray-700 text-sm">{prog.certification}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <TrophyIcon className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-charcoal">Outcome:</strong>
-                      <p className="text-gray-700 text-sm">{prog.outcome}</p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-white">
+                      {prog.title}
+                    </h3>
                   </div>
                 </div>
 
-                <div className="bg-gold/5 rounded-xl p-6 border border-gold/20">
-                  <h4 className="font-bold text-charcoal text-lg mb-4 flex items-center gap-2">
-                    <AcademicCapIcon className="w-6 h-6 text-gold" />
-                    Curriculum Highlights
-                  </h4>
-                  <ul className="grid sm:grid-cols-2 gap-3">
-                    {prog.curriculum.map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-gray-700">
-                        <CheckCircleIcon className="w-4 h-4 text-gold flex-shrink-0" />
-                        <span className="text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Content */}
+                <div className="p-6 flex-1 flex flex-col">
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    {prog.overview}
+                  </p>
 
-                {/* Glow effect */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-gold/0 to-gold/0 group-hover:from-gold/5 group-hover:to-transparent transition-all duration-500 pointer-events-none" />
+                  {/* Info Grid */}
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-3 flex items-center gap-2">
+                      <UsersIcon className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                      <div>
+                        <p className="text-xs font-semibold text-blue-900">Target</p>
+                        <p className="text-xs text-blue-700">{prog.target}</p>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-3 flex items-center gap-2">
+                      <ClockIcon className="w-5 h-5 text-purple-600 flex-shrink-0" />
+                      <div>
+                        <p className="text-xs font-semibold text-purple-900">Duration</p>
+                        <p className="text-xs text-purple-700">{prog.duration}</p>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 flex items-center gap-2">
+                      <BadgeCheckIcon className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      <div>
+                        <p className="text-xs font-semibold text-green-900">Certificate</p>
+                        <p className="text-xs text-green-700">{prog.certification}</p>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-br from-gold/10 to-yellow-100 rounded-xl p-3 flex items-center gap-2">
+                      <TrophyIcon className="w-5 h-5 text-gold flex-shrink-0" />
+                      <div>
+                        <p className="text-xs font-semibold text-yellow-900">Outcome</p>
+                        <p className="text-xs text-yellow-700">{prog.outcome}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Curriculum */}
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-5 border border-gray-200 mt-auto">
+                    <h4 className="font-bold text-charcoal text-sm mb-3 flex items-center gap-2">
+                      <AcademicCapIcon className="w-5 h-5 text-gold" />
+                      Curriculum Highlights
+                    </h4>
+                    <ul className="space-y-2">
+                      {prog.curriculum.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-gray-700">
+                          <CheckCircleIcon className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+                          <span className="text-xs leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
 
-              {/* Video Integration: After Corporate Upskilling Workshops (index 2) */}
-              {index === 2 && (
-                <div className="mt-8 max-w-4xl mx-auto">
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/20 border-2 border-gold/30">
-                    <video
-                      src={InspiringTalkVideo}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="w-full h-auto"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                      <p className="text-white font-semibold text-sm">Dr. Koketso Rakhudu — Inspiring Leadership & Mentorship</p>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Video Integration: After Employment Readiness Programs (index 5) */}
-              {index === 5 && (
-                <div className="mt-8 max-w-4xl mx-auto">
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/20 border-2 border-gold/30">
-                    <video
-                      src={EnterpriseVideo}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="w-full h-auto"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                      <p className="text-white font-semibold text-sm">Enterprise Development in Action — Community Training Excellence</p>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           ))}
+        </div>
+
+        {/* Video Sections */}
+        <div className="mt-16 space-y-12">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-2">
+                Inspiring Leadership & Mentorship
+              </h3>
+              <p className="text-gray-600">Dr. Koketso Rakhudu in action</p>
+            </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/20 border-4 border-gold/30">
+              <video
+                src={InspiringTalkVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto"
+                controlsList="nodownload nofullscreen noremoteplayback"
+                disablePictureInPicture
+              />
+              <button
+                onClick={(e) => {
+                  const video = e.target.previousElementSibling
+                  if (video.paused) {
+                    video.play()
+                    e.target.innerHTML = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"/></svg>'
+                  } else {
+                    video.pause()
+                    e.target.innerHTML = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>'
+                  }
+                }}
+                className="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+                aria-label="Play/Pause video"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-2">
+                Enterprise Development in Action
+              </h3>
+              <p className="text-gray-600">Community Training Excellence</p>
+            </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/20 border-4 border-gold/30">
+              <video
+                src={EnterpriseVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto"
+                controlsList="nodownload nofullscreen noremoteplayback"
+                disablePictureInPicture
+              />
+              <button
+                onClick={(e) => {
+                  const video = e.target.previousElementSibling
+                  if (video.paused) {
+                    video.play()
+                    e.target.innerHTML = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"/></svg>'
+                  } else {
+                    video.pause()
+                    e.target.innerHTML = '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>'
+                  }
+                }}
+                className="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm"
+                aria-label="Play/Pause video"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ===== ACCREDITATION FOOTER ===== */}
       <footer className="text-center text-sm text-gray-600 border-t pt-8">
         <p>
-          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 | Code: 581
-          · SAQA Provider Code: ETDP2368 · Reg No. 177-109 NPO
+          Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
         </p>
         <p>
           <span className="font-semibold text-charcoal">
-            +27 63 644 5723 · admin@koketsorakhudufoundation.com
+            Community Education & Training Centre · Maile Kopman · +27 63 644 5723 · Dumela@drkoketsorakhudu.com
           </span>{" "}
           · www.drkoketsorakhudufoundation.com
         </p>

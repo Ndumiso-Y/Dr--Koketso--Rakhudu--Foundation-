@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-semibold text-gold">Koketso Rakhudu Foundation</h3>
+            <h3 className="text-lg font-semibold text-gold">Dr. Koketso Rakhudu Foundation</h3>
             <p className="mt-3 text-sm text-white/80">
-              Empowering communities through education, enterprise, and equity — building sustainable
+              Empowering Lives with Excellence — building sustainable
               foundations for generations to thrive.
             </p>
           </div>
@@ -30,8 +30,8 @@ export default function Footer() {
             <p className="mt-3 text-sm">
               Maile, Kopman Center<br />
               +27 63 644 5723<br />
-              <a href="mailto:admin@koketsorakhudufoundation.com" className="hover:text-gold">
-                admin@koketsorakhudufoundation.com
+              <a href="mailto:Dumela@drkoketsorakhudu.com" className="hover:text-gold">
+                Dumela@drkoketsorakhudu.com
               </a>
             </p>
             <div className="mt-4 flex gap-6 text-sm">
@@ -41,8 +41,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/70">
-          © {new Date().getFullYear()} Koketso Rakhudu Foundation · Designed by Embark Digitals
+        <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/70 space-y-2">
+          <p>
+            Primary SETA: ETDP SETA · Accreditation Number: ETDP011394 · SAQA Provider Code: ETDP2368 · Reg No: 177-109 NPO
+          </p>
+          <p>
+            © {new Date().getFullYear()} Dr. Koketso Rakhudu Foundation · Designed by{' '}
+            <a
+              href="https://www.embarkdigitals.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:text-yellow-400 transition-colors duration-200 font-semibold"
+            >
+              Embark Digitals
+            </a>
+          </p>
         </div>
       </div>
     </footer>
